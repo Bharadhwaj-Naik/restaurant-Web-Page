@@ -7,7 +7,87 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <div class="logo-icon">🍽</div>
+                Savo<span>ria</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#reservation" class="nav-cta">Reserve a Table</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    <div class="overlay" id="overlay"></div>
     
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-badge">★ Michelin Star Since 2010</div>
+            <h1>Where Every Meal Is a <span>Masterpiece</span></h1>
+            <p>Experience the finest culinary journey with handcrafted dishes made from the freshest seasonal ingredients in
+                an elegant atmosphere.</p>
+            <div class="hero-buttons">
+                <a href="#reservation" class="btn btn-primary">Book Your Table</a>
+                <a href="#menu" class="btn btn-outline">Explore Our Menu</a>
+            </div>
+        </div>
+        <div class="scroll-indicator" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">
+            <div class="mouse"></div>
+        </div>
+    </section>
+    <section class="about-section" id="about">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-label">Our Story</span>
+                <h2>About Savoria</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-image-wrapper">
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=900&q=80"
+                            alt="Chef">
+                    </div>
+                    <div class="about-badge">
+                        <span class="years">15+</span>
+                        <span class="text">Years of<br>Excellence</span>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>A Passion for Exceptional Dining</h3>
+                    <p>Founded in 2010, Savoria was born from a deep love for culinary artistry. Our team of world-class
+                        chefs brings together diverse traditions and innovative techniques to create dishes that delight the
+                        senses.</p>
+                    <p>Every plate we serve tells a story — of carefully sourced ingredients, meticulous preparation, and an
+                        unwavering commitment to quality. We believe dining is not just about food; it's about creating
+                        lasting memories.</p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <div class="feature-icon">👨‍🍳</div>
+                            <span class="feature-text">Expert Chefs</span>
+                        </div>
+                        <div class="about-feature">
+                            <div class="feature-icon">🌿</div>
+                            <span class="feature-text">Fresh Ingredients</span>
+                        </div>
+                        <div class="about-feature">
+                            <div class="feature-icon">⭐</div>
+                            <span class="feature-text">Top Rated</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script src="script.js"></script>
 </body>
