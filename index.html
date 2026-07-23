@@ -137,6 +137,100 @@
             </div>
         </div>
     </section>
+    <section class="reservation-section" id="reservation">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-label">Reservation</span>
+                <h2>Book Your Table</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="reservation-wrapper">
+                <div class="reservation-info">
+                    <h3>Join Us for an Unforgettable Evening</h3>
+                    <p>Reserve your table online and skip the wait. We look forward to welcoming you to Savoria for a remarkable dining experience.</p>
+                    <div class="info-item">
+                        <div class="info-icon">📍</div>
+                        <div class="info-text">
+                            <strong>Location</strong>
+                            <span>42 Culinary Lane, Gourmet District, NY 10001</span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">🕐</div>
+                        <div class="info-text">
+                            <strong>Hours</strong>
+                            <span>Mon–Sat: 11:00 AM – 10:30 PM<br>Sunday: 12:00 PM – 9:00 PM</span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">📞</div>
+                        <div class="info-text">
+                            <strong>Contact</strong>
+                            <span>+1 (555) 234-5678<br>hello@savoria.com</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="reservation-form" id="reservationForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" placeholder="john@example.com" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">Date</label>
+                            <input type="date" id="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Time</label>
+                            <select id="time" required>
+                                <option value="">Select time</option>
+                                <option value="17:00">5:00 PM</option>
+                                <option value="17:30">5:30 PM</option>
+                                <option value="18:00">6:00 PM</option>
+                                <option value="18:30">6:30 PM</option>
+                                <option value="19:00">7:00 PM</option>
+                                <option value="19:30">7:30 PM</option>
+                                <option value="20:00">8:00 PM</option>
+                                <option value="20:30">8:30 PM</option>
+                                <option value="21:00">9:00 PM</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="guests">Number of Guests</label>
+                            <select id="guests" required>
+                                <option value="">Select</option>
+                                <option value="1">1 Guest</option>
+                                <option value="2">2 Guests</option>
+                                <option value="3">3 Guests</option>
+                                <option value="4">4 Guests</option>
+                                <option value="5">5 Guests</option>
+                                <option value="6">6 Guests</option>
+                                <option value="7">7 Guests</option>
+                                <option value="8">8+ Guests</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" placeholder="(555) 000-0000" required>
+                        </div>
+                    </div>
+                    <div class="form-group full">
+                        <label for="special">Special Requests</label>
+                        <textarea id="special" placeholder="Dietary requirements, special occasions, seating preferences..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">Confirm Reservation</button>
+                </form>
+            </div>
+        </div>
+    </section>
 
 
     <script src="script.js"></script>
